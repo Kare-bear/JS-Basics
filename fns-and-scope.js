@@ -19,8 +19,11 @@ if(name==="Tyler"){
 
 
   //Code Here
-
-
+var getName=function(name){
+  prompt(name);
+  return prompt
+}
+console.log(getName);
 //////////////////PROBLEM 3////////////////////
 
 
