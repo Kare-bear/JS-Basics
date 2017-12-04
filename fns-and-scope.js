@@ -21,7 +21,7 @@ if(name==="Tyler"){
   //Code Here
 var getName=function(name){
   prompt(name);
-  return prompt
+  return prompt();
 }
 console.log(getName);
 //////////////////PROBLEM 3////////////////////
@@ -31,7 +31,11 @@ console.log(getName);
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
+ function welcome(){
+    alert("Welcome, " + getName());
+    return alert();
+  }
+
 
 
 //////////////////PROBLEM 4////////////////////
@@ -41,7 +45,9 @@ console.log(getName);
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
+// Arguments--what you actually pass into the function when called
+
+// Parameters--the hypothetical inputs of a function that are noted and accounted for when declaring it
 
 
 //////////////////PROBLEM 5////////////////////
@@ -50,8 +56,10 @@ console.log(getName);
 
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
+//0, null, undefined, NaN, False  
 
-  //Answer Here
+
+// use an If statement 
 
 
 
@@ -61,28 +69,34 @@ console.log(getName);
 
 //Create a function called myName that returns your name
 
-  //Code Here
-  
+  function myName(){
+    return "Kara";
+  }
+  myName();
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
+var newMyName = myName;
 
 //Now alert the result of invoking newMyName
 
 
-
+alert(newMyName);
 //////////////////PROBLEM 7////////////////////
 
 
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
-
+  function outerFn(){
+    return function(){
+      return "Kara";
+    }
+  }
+outerFn();
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-  //Code Here
+  var innerFn = outerFn();
 
 //Now invoke innerFn.
